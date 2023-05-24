@@ -3,9 +3,10 @@
 
 /**
  * main - program that print _putchar
- * Return: n
+ * Return: 0 Always
  */
-int _putchar(char n)
+int main(void)
 {
-	write(1, &n, 1);
+	puts("_putchar\n");
+	return (0);
 }
