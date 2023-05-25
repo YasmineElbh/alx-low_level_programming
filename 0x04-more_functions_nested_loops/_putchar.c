@@ -5,6 +5,7 @@
 /**
  * _putchar - create function _putchar
  * Return: value
+ * @c: character
  */
 int _putchar(char c)
 {

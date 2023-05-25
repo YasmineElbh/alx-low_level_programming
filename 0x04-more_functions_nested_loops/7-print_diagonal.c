@@ -14,9 +14,9 @@ void print_diagonal(int n)
 		for (j = 0; j < i; j++)
 		{
 			if (n >= 48 && n <= 57)
-				_putchar(92);
+				_putchar(' ');
 			else
-				_putchar(32);
+				_putchar('\\');
 		}
 		_putchar('\n');
 	}
