@@ -14,6 +14,8 @@ int main (void)
 	{
 		if (i % n == 0)
 			n = n / i;
+		else
+			i++;
 	}
 	printf("%lu\n", n);
 	return (0);
