@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-	int div = 1;
+	int i = n;
 
 	if (n < 0)
 	{
@@ -19,5 +19,8 @@ void print_number(int n)
 		_putchar('0');
 	}
 	if (n / div >= 10)
+	{
 		div *= 10;
+	}
+	_putchar (i % 10 + '0');
 }
