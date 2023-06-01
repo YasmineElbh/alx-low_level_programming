@@ -8,7 +8,7 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-	char ar[] = {'\t', '\n', ',', ';', '!', '?', ' ', '"', '(', ')', '{', '}'};
+	char ar[] = " \t\n,;.!?\"(){}";
 
 	while (str[i] != '\0')
 	{
@@ -16,6 +16,11 @@ char *cap_string(char *str)
 		{
 			if (i == 0)
 				str[i] -= 32;
+		}
+		else
+		{
+			ar[i] = str[i] + i - 1;
+			str[i] -= 32;
 		}
 		i++;
 	}
