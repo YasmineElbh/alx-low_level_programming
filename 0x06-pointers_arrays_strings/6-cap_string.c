@@ -10,6 +10,7 @@ char *cap_string(char *str)
 	int i = 0;
 	char ar[] = " \t\n,;.!?\"(){}";
 
+	ar[] = ar[i];
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
