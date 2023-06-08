@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int find_sqrt - find sqrt
+ * find_sqrt - find sqrt
  * @n: number
  * @f: find
  * Return: result

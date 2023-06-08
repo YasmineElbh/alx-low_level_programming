@@ -24,20 +24,17 @@ int _strlen_recursion(char *s)
  * @i: num
  * Return: resut
  */
-int check(int *n, int m, int i)
+int check(char *n, int m, int i)
 {
-	if (*s != '\0')
-	{
 		if (n[m] == n[i])
 		{
-			if (i > j / 2)
+			if (i > m / 2)
 				return (1);
 			else
 				return (check(n, i + 1, m - 1));
 		}
 		else
 			return (0);
-	}
 }
 
 /**
@@ -47,7 +44,5 @@ int check(int *n, int m, int i)
  */
 int is_palindrome(char *s)
 {
-	int i = 1;
-
-	return (check(i, s, _strlen_recursion(s) - 1));
+	return (check(s, 1, _strlen_recursion(s) - 1));
 }
